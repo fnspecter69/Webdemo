@@ -1,0 +1,25 @@
+body{
+  background-color: beige;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes wrapper_background {
+    from {background-color: aqua;}
+    to {background-color: chartreuse;}
+}
+
+/* The animation code need to add support for chrome*/
+@keyframes wrapper_background {
+    from {background-color: aqua;}
+    to {background-color: chartreuse;}
+}
+
+.wrapper{
+  width: 900px;
+  height: 600px;
+  background-color: aqua;
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
+  animation-name: wrapper_background;
+  animation-duration: 10s;
+}
