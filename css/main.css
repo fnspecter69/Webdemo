@@ -18,8 +18,14 @@ body{
   width: 900px;
   height: 600px;
   background-color: aqua;
-  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-name: wrapper_background; /* Chrome, Safari, Opera */
   -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite;
   animation-name: wrapper_background;
   animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.button{
+  background: #4682B4
 }
