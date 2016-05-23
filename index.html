@@ -3,17 +3,22 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>WebDemo</title>
+		<!-- Compressed CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
 		<script type="text/javascript" src="js\animate.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body onload="draw()">
 		<div class="wrapper">
-			<canvas id="glcanvas" width="150" height="150">
+			<canvas id="glcanvas">
 				Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
 			</canvas>
 			<section>
-				<button>STOP ANIMATION</button>
-				<button>Resume</button>
+				<button class="alert button">STOP ANIMATION</button>
+				<button class="success button">Resume</button>
 			</section>
 		</div>
 	</body>
