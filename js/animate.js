@@ -1,4 +1,4 @@
-function initWebGL(canvas) {
+/*function initWebGL(canvas) {
   gl = null;
   
   try {
@@ -12,7 +12,6 @@ function initWebGL(canvas) {
     alert("Unable to initialize WebGL. Your browser may not support it.");
     gl = null;
   }
-  
   return gl;
 }
 
@@ -31,5 +30,16 @@ function start() {
     gl.depthFunc(gl.LEQUAL);                                // Near things obscure far things
     gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);      // Clear the color as well as the depth buffer.
   }
+  
 }
-
+*/
+function draw() {
+  var canvas = document.getElementById('glcanvas');
+  if(canvas.msGetInputContext){
+    var ctx = canvas.msGetInputContext('2d');
+    ctx.fillStyle = "rgb(200, 0, 0)";
+    ctx.fillRect(30, 30, 55, 50);
+    
+    
+  }
+}
