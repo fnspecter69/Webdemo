@@ -35,8 +35,8 @@ function start() {
 */
 function draw() {
   var canvas = document.getElementById('glcanvas');
-  if(canvas.msGetInputContext){
-    var ctx = canvas.msGetInputContext('2d');
+  if(canvas.getContext){
+    var ctx = canvas.getContext('2d');
     ctx.fillStyle = "rgb(200, 0, 0)";
     ctx.fillRect(30, 30, 55, 50);
     

@@ -6,3 +6,6 @@ Updates
 * add some animation for the background
 * add style to the button
 * using foundaton for fast prototyping
+* setup a github page for this repository;
+
+link to the site is [here](https://fnspecter69.github.io/Webdemo/)
